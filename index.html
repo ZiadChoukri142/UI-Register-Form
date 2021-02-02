@@ -4,48 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Formulaire d'inscription</title>
 </head>
 <body>
-   <h1> Formulaire d'inscription </h1>
-   <form>
-    <div>
+   <div class="heading">Formulaire d'inscription </div> 
+   <form class="main-Form">
+
         <label> Nom et prénom </label>
-        <input type="text" name="full-Name" placeholder="Type Here">
-    </div>
-    <div>
+        <span><input type="text" name="full-Name"></span>
+    
         <label> Email </label>
-        <input type="Email" name="Email" placeholder="Type Here">
-    </div>
-    <div>
+        <span><input type="Email" name="Email"></span>
+    
         <label> Mot de passe </label>
-        <input type="password" name="password" placeholder="Type Here">
-    </div>
-    <div>
+        <span> <input type="password" name="password"></span>
+   
         <label> Confirmé mot de passe </label>
-        <input type="password" name="confirme-Password" placeholder="Type Here">
-    </div>
-    <div> 
+        <span><input type="password" name="confirme-Password"></span>
+   
         <label>Status</label>
-    <select name="status">
+        <span><select name="status"></span>
         <option value="" disabled selected>Selectionner</option>  
         <option value="student">Student</option>
         <option value="software-Developer">Software Developer</option>
         <option value="software-Engineer">Software Engineer</option>
         <option value="web-Designer">Web Designer</option>
-    </select>
-    </div>
-    <div>
+         </select>
+   
+    
+        <label> Numéro du tél </label>
+        <span><input type="text" name="phone-Numbe"></span>
+   
+    
         <label>Adresse Local</label>
-        <textarea name="adresse"></textarea>
-    </div>
-    <div>
-    <input type="checkbox" name="conditions">
+        <span><textarea name="adresse"></textarea></span>
+   
+    
+    <span><input type="checkbox" name="conditions"></span>
     <label>J'accpete les conditions d'inscription</label>
-    </div>
-    <div>
+    
+    
         <button>S'inscrire</button>
-    </div>
+    
     </form>
 </body>
 </html>
